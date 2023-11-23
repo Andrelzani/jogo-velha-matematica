@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tabuleiro.css">
+    <title>Jogo da Velha</title>
+</head>
+<body>
+<div class="game-container">
+    <table class="game-table">
+        <tr>
+            <td id="cell00" onclick="makeMove(0, 0)"></td>
+            <td id="cell01" onclick="makeMove(0, 1)"></td>
+            <td id="cell02" onclick="makeMove(0, 2)"></td>
+        </tr>
+        <tr>
+            <td id="cell10" onclick="makeMove(1, 0)"></td>
+            <td id="cell11" onclick="makeMove(1, 1)"></td>
+            <td id="cell12" onclick="makeMove(1, 2)"></td>
+        </tr>
+        <tr>
+            <td id="cell20" onclick="makeMove(2, 0)"></td>
+            <td id="cell21" onclick="makeMove(2, 1)"></td>
+            <td id="cell22" onclick="makeMove(2, 2)"></td>
+        </tr>
+    </table>
+</div>
+
+<div class="score-container">
+    <p id="playerXWins">Player X Wins: 0 | Respostas Corretas: 0</p>
+    <p id="playerOWins">Player O Wins: 0 | Respostas Corretas: 0</p>
+</div>
+
+<div class="rules-container">
+    <h2>Regras do Jogo da Velha com Desafios Matemáticos</h2>
+    <ol>
+        <li>Cada jogador deve resolver um desafio matemático antes de fazer sua jogada.</li>
+        <li>Errando a questão perde sua vez automaticamente.</li>
+        <li>Perde o primeiro que desistir.</li>
+        
+    </ol>
+</div>
+
+<script src="tabuleiroscr.js"></script>
+
+</body>
+</html>

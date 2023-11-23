@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: red;
+    color: white;
+}
+
+.game-container {
+    margin-bottom: 50px;
+}
+
+.game-table {
+    border-collapse: collapse;
+    width: 60%; /
+}
+
+.game-table, .game-table td {
+    border: 2px solid black;
+    width: 400px; 
+    height: 100px; 
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold; 
+}
+
+.score-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#playerXWins, #playerOWins {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
